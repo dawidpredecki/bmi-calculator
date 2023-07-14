@@ -8,16 +8,16 @@
 </head>
 <body>
     <h1>Kalkulator BMI</h1>
-    <main>
-        <section>
-            <label for="weight">Podaj swoją wagę (kg):</label>
-            <input type="number" name="weight" id="weight">
-        </section>
-        <section>
-            <label for="weight">Podaj swój wzrost (cm):</label>
-            <input type="number" name="height" id="height">
-        </section>
-        <input type="submit" value="Oblicz" id="calculate-bmi">
+    <main id="main_section">
+        <form name="bmi_calculator">
+                <label for="weight">Podaj swoją wagę (kg):</label>
+                <input type="text" name="weight" required />
+                <label for="weight">Podaj swój wzrost (m):</label>
+                <input type="text" name="height" required />
+            <input type="submit" name="submit" value="Oblicz" id="calculate-bmi">
+        </form>
     </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
