@@ -9,14 +9,26 @@
 <body>
     <h1>Kalkulator BMI</h1>
     <main id="main_section">
-        <form name="bmi_calculator">
+        <ul id="bmi_range">
+            <li class="bmi_value">< 16 - wygłodzenie</li>
+            <li class="bmi_value">16 - 16.99 - wychudzenie</li>
+            <li class="bmi_value">17 - 18.49 - niedowaga</li>
+            <li class="bmi_value">18.5 - 24.99 - wartość prawidłowa</li>
+            <li class="bmi_value">25 - 29.99 - nadwaga</li>
+            <li class="bmi_value">30 - 34.99 - I stopień otyłości</li>
+            <li class="bmi_value">35 - 39.99 - II stopień otyłości</li>
+            <li class="bmi_value">> 40 - otyłość skrajna</li>
+        </ul>
+        <section id="calculate_bmi">
+            <form name="bmi_calculator">
                 <label for="weight">Podaj swoją wagę (kg):</label>
                 <input type="text" name="weight" required />
                 <label for="weight">Podaj swój wzrost (cm):</label>
                 <input type="text" name="height" required />
-            <input type="submit" name="submit" value="Oblicz" id="calculate-bmi">
-        </form>
-        <h3 id="result"></h3>
+            <input type="submit" name="submit" value="Oblicz" id="calculateBtn">
+            </form>
+            <h3 id="result"></h3>
+        </section>
     </main>
 
     <script src="app.js"></script>

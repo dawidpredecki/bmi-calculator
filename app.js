@@ -1,6 +1,5 @@
-let bmiCalculator = document.forms["bmi_calculator"];
-let mainSection = document.getElementById("main_section");
-let result = document.getElementById("result");
+const bmiCalculator = document.forms["bmi_calculator"];
+const result = document.getElementById("result");
 
 bmiCalculator.addEventListener("submit", calculateBMI);
 
@@ -11,9 +10,9 @@ function calculateBMI(e) {
     let bmi = weight / (Math.pow(height / 100, 2));
     result.textContent = `Twoje BMI: ${bmi.toFixed(2)}`;
     if (bmi >= 18.5 && bmi <= 24.9) {
-        result.style.color = "green";
+        result.style.color = "lime";
     }
     else {
-        result.style.color = "red";
+        result.style.color = "#FF3131";
     }
 }
